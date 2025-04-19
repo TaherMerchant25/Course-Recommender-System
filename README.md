@@ -51,3 +51,25 @@ This project is an intelligent Course Recommender System built using Natural Lan
    ```bash
    python app.py
    ```
+## 📦 API Endpoint
+  ```
+  POST /recommend
+  ```
+  Send a JSON object with fields like:
+  ```json
+  {
+  "skills": "machine learning, python",
+  "proficiency": "intermediate",
+  "languages": "English",
+  "learning_goal": "build ML projects",
+  "interests": "AI, Data Science",
+  "course_duration": "2 months",
+  "previous_courses": "Intro to Python",
+  "free_or_paid": "free",
+  "learning_mode": "self-paced",
+  "weekly_hours": "5"
+}
+```
+Returns a list of top 5 recommended courses with details.
+## 📝 License
+MIT License
