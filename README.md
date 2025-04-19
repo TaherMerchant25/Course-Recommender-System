@@ -41,7 +41,7 @@ An intelligent course recommendation engine that matches users with the best onl
    ```bash
    git clone https://github.com/yourusername/course-recommender-system.git
    cd course-recommender-system
-'''
+   ```
 2. Install dependencies:
 ```bash
 pip install -r requirements.txt
