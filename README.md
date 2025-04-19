@@ -43,11 +43,11 @@ An intelligent course recommendation engine that matches users with the best onl
    cd course-recommender-system
    ```
 2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
+   ```bash
+    pip install -r requirements.txt
+    ```
 3. Make sure your test_data.csv file is in the root directory.
 4. Run the app:
    ```bash
    python app.py
-```
+   ```
