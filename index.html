@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Recommender</title>
+
+    <!-- Link your CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- Link your JS -->
+    <script src="{{ url_for('static', filename='main.js') }}" defer></script>
+</head>
+<body>
+<header class="navbar">
+    <h1>TEAM OVERFITTED</h1>
+</header>
+
+<!-- Canvas for Line Animation (behind content) -->
+<canvas id="linesCanvas"></canvas>
+
+<!-- Main Container (below navbar) -->
+<div class="container">
+    <h1>Find the Best Courses for You</h1>
+    <form id="courseForm">
+        <label for="education">Education Level:</label>
+        <select id="education" required>
+            <option value="" disabled selected>Select your education level</option>
+            <option>High School</option>
+            <option>Bachelor's</option>
+            <option>Master's</option>
+            <option>PhD</option>
+        </select>
+
+        <label for="field_of_study">Field of Study:</label>
+        <textarea id="field_of_study" required placeholder="Enter your field of study"></textarea>
+
+        <label for="current_status">Current Status:</label>
+        <select id="current_status" required>
+            <option value="" disabled selected>Select your current status</option>
+            <option>Student</option>
+            <option>Professional</option>
+            <option>Other</option>
+        </select>
+
+        <label for="skills">Skills:</label>
+        <textarea id="skills" required placeholder="List your skills"></textarea>
+
+        <label for="proficiency">Proficiency Level:</label>
+        <select id="proficiency" required>
+            <option value="" disabled selected>Select your proficiency level</option>
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+        </select>
+
+        <label for="languages">Languages:</label>
+        <select id="languages" required>
+            <option value="" disabled selected>Select your preferred language</option>
+            <option>English</option>
+            <option>Spanish</option>
+            <option>French</option>
+        </select>
+
+        <label for="learning_goal">Learning Goal:</label>
+        <textarea id="learning_goal" required placeholder="What do you want to achieve with this course?"></textarea>
+
+        <label for="interests">Interests:</label>
+        <textarea id="interests" required placeholder="What are your areas of interest?"></textarea>
+
+        <label for="course_duration">Course Duration:</label>
+        <select id="course_duration" required>
+            <option value="" disabled selected>Select course duration</option>
+            <option>Short-term</option>
+            <option>Long-term</option>
+        </select>
+
+        <label for="previous_courses">Previous Courses Taken:</label>
+        <select id="previous_courses" required>
+            <option value="" disabled selected>Have you taken any courses before?</option>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <label for="free_or_paid">Paid, Free, or Any:</label>
+        <select id="free_or_paid" required>
+            <option value="" disabled selected>Preferred course payment type</option>
+            <option>Paid</option>
+            <option>Free</option>
+            <option>Any</option>
+        </select>
+
+        <label for="learning_mode">Learning Mode:</label>
+        <select id="learning_mode" required>
+            <option value="" disabled selected>Preferred learning mode</option>
+            <option>Online</option>
+            <option>Offline</option>
+            <option>Any</option>
+        </select>
+
+        <label for="weekly_hours">Weekly Learning Hours:</label>
+        <select id="weekly_hours" required>
+            <option value="" disabled selected>Preferred weekly learning hours</option>
+            <option>10-20</option>
+            <option>20-30</option>
+            <option>30-40</option>
+        </select>
+
+        <!-- Change button type to submit to trigger form submission -->
+        <!-- Alternatively, keep it as is if you're using JavaScript to handle it -->
+        <!-- button type changed to submit -->
+
+
+
+
+<button type="submit">Get Recommendations</button>
+
+    </form>
+
+    <!-- Updated section to display recommended courses with details -->
+    <!-- Changed header from h2 to h3 for better semantic structure -->
+<h3>Recommended Courses</h3><!-- Changed h2 to h3 for better semantic structure -->
+
+<ul id="recommendations"></ul><!-- Keep this as is; JS will populate it -->
+
+<!-- Optional: Add some styling to improve appearance (in CSS file) -->
+<!-- Optional: Add some styling to improve appearance (in CSS file) -->
+
+    </div><!-- Close main container div -->

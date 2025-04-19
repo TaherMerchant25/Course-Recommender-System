@@ -1,0 +1,2 @@
+# Course Recommender System
+ This project is an intelligent Course Recommender System built using Natural Language Processing (NLP) techniques. It recommends the most relevant online courses based on a user's skills, interests, goals, and preferences. It uses TF-IDF vectorization and sentence embeddings with FAISS indexing to deliver fast and accurate recommendations by calculating both keyword-based and semantic similarity scores.
